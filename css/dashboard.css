@@ -1,0 +1,421 @@
+main {
+  min-height: 60.5rem !important;
+}
+
+/*Main container*/
+
+.dashboard-wrapper {
+  max-width: 106.25rem;
+  margin: 0 auto;
+}
+
+/* Sidebar Start*/
+
+.sidebar {
+  width: 36.25rem;
+}
+
+.sidebar__content__menu__list__item {
+  min-width: 220px;
+}
+
+.sidebar__content__menu__list__item a {
+  color: var(--primary);
+  font-family: "Open Sans";
+  font-size: 1.3125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  width: 9.375rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.sidebar__content__menu__list__item.orders-link > a {
+  padding-right: 1.8rem;
+}
+
+.account-settings-menu {
+  display: none;
+}
+
+.account-settings__list__item a {
+  color: var(--primary);
+  font-family: "Open Sans";
+  font-size: 1.3125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  width: 14.375rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.sidebar__content__menu__list__item a:hover,
+.account-settings__list__item a:hover {
+  background-color: #e9eef1;
+}
+
+.general-settings-link.account-settings__list__item.mb-2.mt-2 > a {
+  padding-right: 1.7rem;
+}
+
+/*Sidebar End*/
+
+/* Services Start*/
+
+.services__stats {
+  width: 100%;
+  height: 10.625rem;
+  background-color: #e9eef1;
+  border-radius: 8px;
+  color: #75818d;
+}
+
+.services__stats h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.services__stats {
+  font-size: 0.9375rem;
+  font-weight: bold;
+}
+
+.about-us__features {
+  margin-top: 1rem !important;
+}
+
+/* Services End*/
+
+/* Orders Start*/
+
+.orders-container {
+  width: 100%;
+  display: none;
+}
+
+.orders-info {
+  /* width: 67.75rem; */
+  min-height: 47.625rem;
+}
+
+.no-orders__info {
+  font-size: 1.125rem;
+}
+.no-orders__btn {
+  font-family: "Noto Sans";
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.orders {
+  width: 100%;
+  font-family: "Open Sans";
+  display: none;
+}
+
+.orders__nav__links {
+  padding-bottom: 0.9rem;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.45);
+}
+
+.orders__nav__links {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.orders__nav__link a {
+  color: #444444;
+  font-size: 1.0625rem;
+  opacity: 69%;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.orders__nav__link a::after {
+  content: "";
+  width: 11.875rem;
+  height: 7px;
+  background-color: #00afa1;
+  position: absolute;
+  bottom: 0;
+  left: -2.1875rem;
+  display: none;
+}
+
+.orders__nav__link a:focus {
+  color: #00afa1;
+}
+
+.orders__nav__link a:focus::after,
+.orders__nav__link a:active::after {
+  display: block;
+}
+
+.orders__previous {
+  display: none;
+}
+
+.orders__current__order,
+.orders__previous__order {
+  position: relative;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.orders__current__order__header,
+.orders__previous__order__header {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+
+.orders__current__order__details,
+.orders__previous__order__details {
+  height: 3.125rem;
+  width: 1.025rem;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.orders__current__order__details span,
+.orders__previous__order__details span {
+  width: 100%;
+  height: 2px;
+  background-color: #444444;
+  display: inline-block;
+  color: #444444;
+}
+
+.orders__current__order__details span:first-child,
+.orders__previous__order__details span:first-child {
+  transform: rotate(45deg) translateX(8px);
+}
+
+.orders__current__order__details span:last-child,
+.orders__previous__order__details span:last-child {
+  transform: rotate(-45deg) translateX(8px);
+}
+
+.orders__current__order__number,
+.orders__previous__order__number {
+  font-size: 1.25rem;
+}
+
+.orders__current__order__name,
+.orders__previous__order__name {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+.orders__current__order__price__figures,
+.orders__current__order__number,
+.orders__current__order__name,
+.orders__previous__order__price__figures,
+.orders__previous__order__number,
+.orders__previous__order__name {
+  color: #00afa1;
+}
+
+.orders__current__order__price__figures,
+.orders__previous__order__price__figures {
+  margin-left: 1rem;
+  font-size: 1.0625rem;
+  font-weight: normal;
+}
+
+.orders__current__order__date,
+.orders__current__order__number,
+.orders__previous__order__date,
+.orders__previous__order__number {
+  display: inline-block;
+}
+
+.orders__current__order__date,
+.orders__previous__order__date {
+  margin-left: 2rem;
+}
+.orders__current__order__state-info,
+.orders__previous__order__state-info {
+  background-color: rgba(207, 228, 252, 0.45);
+  width: 210px;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 8px;
+  color: #00afa1;
+  font-size: 1.0625rem;
+}
+
+.orders__previous__order__state-info {
+  width: 140px;
+  background-color: rgba(89, 205, 84, 0.45);
+}
+
+/* Orders End*/
+
+/* Account settings start*/
+
+.account-settings-container {
+  display: none;
+  width: 100%;
+}
+
+.general-settings__container {
+  width: 52.625rem;
+  height: 31.5rem;
+  background-color: #e9eef1;
+  border-radius: 8px;
+  display: none;
+}
+
+.general-settings__form,
+.password-change__form {
+  padding: 1rem;
+  text-align: center;
+}
+
+.general-settings__form input,
+.password-change__form input {
+  height: 3rem;
+  width: 23.125rem;
+  border-radius: 8px;
+  border: none;
+  margin: 0.5rem 0.3rem;
+  font-size: 1.125rem;
+  padding: 1rem;
+}
+
+.general-settings__form__address {
+  position: relative;
+}
+
+.general-settings__form__address input {
+  height: 3rem;
+  width: 47.25rem;
+  border-radius: 8px;
+}
+
+.input-icons i {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  color: #e9eef1;
+  font-size: 1.8rem;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.general-settings__btn,
+.password-change__btn {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 4rem !important;
+}
+
+.password-change__container {
+  width: 30.875rem;
+  height: 18.5625rem;
+  background-color: #e9eef1;
+  border-radius: 8px;
+  display: none;
+}
+
+/*Account Settings End*/
+
+/*Services Section Content Container*/
+
+@media (min-width: 1000px) {
+  .services-container {
+    width: 67.75rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dashboard-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row !important;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .sidebar__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sidebar__content__menu__list {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 575px) {
+  .sidebar {
+    flex-direction: column !important;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .sidebar__content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sidebar__content__menu__list {
+    flex-direction: column;
+  }
+
+  .services-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .services__stats {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .services__stats > div {
+    width: 70%;
+    margin: 1rem 0;
+  }
+
+  .password-change__container {
+    width: 90%;
+  }
+  .general-settings__container {
+    width: 90%;
+    height: 43rem;
+  }
+
+  .general-settings__form input,
+  .password-change__form input {
+    width: 85%;
+  }
+
+  .general-settings__form__address input {
+    width: 85%;
+  }
+}

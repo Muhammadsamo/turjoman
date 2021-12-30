@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap");
+
+/* Section Many Solutions start */
+
+.many-solutions {
+  height: 55rem;
+  gap: 48px;
+}
+
+.many-solutions__text__title {
+  margin-bottom: 48px;
+}
+
+.many-solutions__text__para {
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+.section-heading {
+  font-size: 2rem !important;
+  font-weight: normal !important;
+  line-height: 1.5;
+}
+
+/* Section about us start */
+
+.section-about-us {
+  gap: 48px;
+  background: url("../images/about-us-bg.png") 10% -2% no-repeat;
+}
+
+.section-about-us__title {
+  font-size: 2.875rem !important;
+}
+
+.section-about-us h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3125rem;
+}
+
+.section-about-us p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 16px;
+  line-height: 28px;
+  max-width: 563px;
+}
+
+.section-about-us__left__img {
+  max-width: 500px;
+}
+
+/* Section Features Start */
+
+.section-features {
+  background-color: #ebf1f6;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  height: 600px;
+  align-items: flex-end;
+}
+
+.section-featuers__left {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.section-featuers__left p {
+  line-height: 1.75rem;
+  max-width: 20rem;
+}
+
+/* Section Everything Included Start*/
+
+.everything_included__title {
+  text-align: center;
+  font-size: 2.875rem;
+  line-height: 62px;
+}
+
+.everthing-included__container {
+  padding: 15px;
+}
+
+.everthing-included__container h1 {
+  font-family: "Noto Sans";
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  color: var(--primary);
+}
+
+.everthing-included__container p {
+  max-width: 35rem;
+  font-family: "Noto Sans";
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1050px) {
+  .file-formats__img,
+  .companies-and-institutions__img {
+    padding-left: 8rem;
+  }
+
+  .certified-translations__text {
+    padding-left: 5rem;
+  }
+}
+/* .section-features__right__img {
+  max-height: 400px;
+} */
+
+@media (min-width: 1199px) {
+  .everthing-included__container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 440px) {
+  .section-about-us__title {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .many-solutions {
+    flex-direction: column;
+    height: 38rem;
+    margin-bottom: 2rem;
+  }
+  .many-solutions__img,
+  .many-solutions__text {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .many-solutions__text__title {
+    margin-bottom: 1rem;
+  }
+
+  .many-solutions__text__para {
+    line-height: 2;
+  }
+
+  .many-solutions__button {
+    width: 70%;
+  }
+
+  .section-about-us__title {
+    text-align: center;
+  }
+
+  .about-us__sec-1,
+  .about-us__sec-2 {
+    flex-direction: column;
+  }
+  .section-about-us__left,
+  .section-about-us__right {
+    width: 100% !important;
+  }
+
+  .about-us__sec-1 > div,
+  .about-us__sec-2 > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us__features {
+    flex-direction: column;
+  }
+
+  .about-us__feature {
+    width: 60% !important;
+    margin-bottom: 2rem;
+  }
+
+  .section-features {
+    height: 46.875rem;
+  }
+
+  .section-features > div.container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-featuers__left,
+  .section-features__right {
+    width: 100% !important;
+  }
+
+  .section-featuers__left p {
+    max-width: 100%;
+    line-height: 2rem;
+  }
+
+  .section-features__button {
+    width: 70%;
+  }
+
+  .everthing-included__container {
+    width: 100%;
+  }
+
+  .everthing-included__container h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 2rem !important;
+    line-height: 1.5;
+  }
+
+  .everthing-included__container p {
+    max-width: 100%;
+  }
+
+  .file-formats,
+  .companies-and-institutions {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certified-translations {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .file-formats__img,
+  .file-formats__text,
+  .certified-translations__img,
+  .certified-translations__text,
+  .companies-and-institutions__img,
+  .companies-and-institutions__text {
+    width: 90% !important;
+    padding: 0;
+    margin: 3rem 0;
+  }
+
+  .file-formats__img,
+  .companies-and-institutions__img {
+    padding: 0;
+  }
+}
